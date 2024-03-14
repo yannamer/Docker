@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: europe-west2-docker.pkg.dev/gq-cloud-computing/trip-repo/trip-meal-web:v1
+      - image: #ADD NAME OF YOUR IMAGE
         name: web
         ports:
         - containerPort: 5000
@@ -80,7 +80,7 @@ spec:
         service: db
     spec:
       containers:
-      - image: europe-west2-docker.pkg.dev/gq-cloud-computing/trip-repo/trip-meal-db:v1
+      - image: #ADD NAME OF YOUR IMAGE
         name: db
         ports:
         - containerPort: 3306
