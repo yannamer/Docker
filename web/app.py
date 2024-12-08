@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import Flask, render_template, flash, jsonify, request, url_for, \
                   redirect, session, g
 from dbconnect import connection

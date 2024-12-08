@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: #ADD NAME OF YOUR IMAGE
+      - image: yannmer/tripmealimages-web:0.1
         name: web
         ports:
         - containerPort: 5000
@@ -80,7 +80,7 @@ spec:
         service: db
     spec:
       containers:
-      - image: #ADD NAME OF YOUR IMAGE
+      - image: yannmer/tripmealimages-db:0.1
         name: db
         ports:
         - containerPort: 3306
