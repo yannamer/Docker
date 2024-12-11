@@ -29,7 +29,7 @@ spec:
         service: web
     spec:
       containers:
-      - image: yannmer/tripmealimages-web:0.1
+      - image: europe-west8-docker.pkg.dev/gq-cloud-computing/repotripmeal/apptripmeal-web:1.0
         name: web
         ports:
         - containerPort: 5000
@@ -80,7 +80,7 @@ spec:
         service: db
     spec:
       containers:
-      - image: yannmer/tripmealimages-db:0.1
+      - image: europe-west8-docker.pkg.dev/gq-cloud-computing/repotripmeal/apptripmeal-db:1.0
         name: db
         ports:
         - containerPort: 3306
@@ -103,8 +103,3 @@ spec:
       resources:
         requests:
           storage: 100Mi
-environment:
-  MYSQL_ROOT_PASSWORD: "my-secret-pw"
-  MYSQL_DATABASE: "tripmealdb"
-  MYSQL_USER: "root"
-  MYSQL_PASSWORD: "root-password"
